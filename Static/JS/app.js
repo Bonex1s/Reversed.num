@@ -1,8 +1,8 @@
-let myName = "MOLODEC, тольок наоборот";
-let nameMy = "CEDOLOM";
-let myName2 = "ПОЛУЧИЛОСЬ!";
+let wrongAlert = "MOLODEC, тільки навпаки";
+let wrongAlert1 = "CEDOLOM";
+let rightAlert2 = "ВІРНО!!!!";
 let myName3 = "NEPRAVILNO!";
-let myName21 = "НЕ ПРАВИЛЬНО!";
+let wrongAlert4 = "НЕ ВІРНО!!!!";
 let numberOne = 58;
 let numberTwo = 10;
 
@@ -14,6 +14,8 @@ const clickBtn2 = document.getElementById("mybtn2");
 const inputBtn2 = document.getElementById("input12");
 const stringOne2 = document.getElementById("paragraph2");
 
+const newPage = document.getElementById("");
+
 function open(a) {
   a > 100
     ? (stringOne.style.color = "green")
@@ -22,7 +24,7 @@ function open(a) {
 }
 
 function codeOne(b) {
-  b == numberOne ? alert(myName) : open(b);
+  b == numberOne ? alert(wrongAlert) : open(b);
 }
 
 clickBtn.onclick = function () {
@@ -32,7 +34,9 @@ clickBtn.onclick = function () {
 // ==================
 
 function open2(a) {
-  a == nameMy ? alert(myName2) : alert(myName21);
+  a == wrongAlert1
+    ? (window.location.href = "result.html")
+    : alert(wrongAlert4);
   stringOne2.textContent = a;
 }
 

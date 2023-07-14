@@ -1,9 +1,35 @@
 body {
   background-color: black;
-  color: aqua;
+  color: rgb(124, 0, 249);
   font-family: comfortaa;
 }
 
 .mainpage {
   text-align: center;
+}
+
+.borderone > p {
+  border: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: rgb(25, 25, 29);
+  padding: 12px;
+  display: inline;
+  color: rgb(124, 0, 249);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.borderone {
+  margin-top: 3em;
+}
+
+button {
+  background-color: rgb(52, 33, 69);
+  border-radius: 3px;
+  color: rgb(209, 173, 242);
+}
+
+.rules {
+  margin-top: 30px;
 }
